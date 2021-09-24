@@ -1,0 +1,2 @@
+# kalkulyator
+oddiy usulda kalkulyator
