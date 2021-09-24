@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Rustamov Ixtiyor">
+    <link rel="stylesheet" href="./still.css">
+    <title>Kalkulaytor</title>
+</head>
+<body>
+    <div class="pufakchalar">
+        <span class="pufak1"></span>
+        <span class="pufak2"></span>
+        <span class="pufak3"></span>
+        <span class="pufak4"></span>
+        <span class="pufak5"></span>
+        <span class="pufak6"></span>
+        <span class="pufak7"></span>
+    </div>
+
+    <div class="quti">
+        <form action="#" name="kalkulyator">
+            <input type="text" name="yechim" disabled>
+            <div class="tugmalar">
+                <input type="button" value="Tozalash" onclick="kalkulyator.yechim.value = ''">
+                <input type="button" value="O`chrish" onclick="kalkulyator.yechim.value = kalkulyator.yechim.value.substr(0, kalkulyator.yechim.value.length - 1)">
+                <input type="button" value="%" onclick="kalkulyator.yechim.value += '%'">
+                <input type="button" value="/" onclick="kalkulyator.yechim.value += '/'">
+            </div>
+            <div class="tugmalar">
+                <input type="button" value="7" onclick="kalkulyator.yechim.value += '7'">
+                <input type="button" value="8" onclick="kalkulyator.yechim.value += '8'">
+                <input type="button" value="9" onclick="kalkulyator.yechim.value += '9'">
+                <input type="button" value="*" onclick="kalkulyator.yechim.value += '*'">
+            </div>
+            <div class="tugmalar">
+                <input type="button" value="4" onclick="kalkulyator.yechim.value += '4'">
+                <input type="button" value="5" onclick="kalkulyator.yechim.value += '5'">
+                <input type="button" value="6" onclick="kalkulyator.yechim.value += '6'">
+                <input type="button" value="-" onclick="kalkulyator.yechim.value += '-'">
+            </div>
+            <div class="tugmalar">
+                <input type="button" value="1" onclick="kalkulyator.yechim.value += '1'">
+                <input type="button" value="2" onclick="kalkulyator.yechim.value += '2'">
+                <input type="button" value="3" onclick="kalkulyator.yechim.value += '3'">
+                <input type="button" value="+" onclick="kalkulyator.yechim.value += '+'">
+            </div>
+            <div class="tugmalar">
+                <input type="button" value="0" onclick="kalkulyator.yechim.value += '0'">
+                <input type="button" value="00" onclick="kalkulyator.yechim.value += '00'">
+                <input type="button" value="." onclick="kalkulyator.yechim.value += '.'">
+                <input type="button" value="=" onclick="kalkulyator.yechim.value = eval(kalkulyator.yechim.value)">
+            </div>
+        </form>
+            </div>
+      </body>
+</html>

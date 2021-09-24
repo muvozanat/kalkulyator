@@ -1,0 +1,173 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+     overflow: hidden;
+     height: 100vh;
+     width: 100%;
+     background: rgb(13, 2, 53);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.pufakchalar {
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.pufakchalar span {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.192); 
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); */
+    backdrop-filter: blur(5px);
+    animation: yuqoriga 9s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes yuqoriga {
+    to {
+        transform: translateY(-85vh)
+    }
+}
+
+@keyframes kozgu {
+    to {
+        transform: translateX(-350px);
+    }
+}
+
+
+
+.pufakchalar span.pufak1 {
+    animation-delay: 1.8s;
+    transform: scale(1.5);
+}
+.pufakchalar span.pufak2 {
+    animation-delay: 1.2s;
+    transform: scale(3);
+}
+.pufakchalar span.pufak3 {
+    animation-delay: 3s;
+    transform: scale(0.5);
+}
+.pufakchalar span.pufak4 {
+    animation-delay: 2.3s;
+    transform: scale(2.7);
+}
+.pufakchalar span.pufak5 {
+    animation-delay: 0.3s;
+    transform: scale(4.2);
+}
+.pufakchalar span.pufak6 {
+    animation-delay: 4s;
+    transform: scale(1.2);
+}
+.pufakchalar span.pufak7 {
+    animation-delay: 3.4s;
+    transform: scale(0.7);
+}
+
+
+
+.pufakchalar span.pufak1:before {
+    animation-delay: 1.5s;
+}
+.pufakchalar span.pufak2:before {
+    animation-delay: 2s;
+}
+.pufakchalar span.pufak3:before {
+    animation-delay: .4s;
+}
+.pufakchalar span.pufak4:before {
+    animation-delay: 3s;
+}
+.pufakchalar span.pufak5:before {
+    animation-delay: 5s;
+}
+.pufakchalar span.pufak6:before {
+    animation-delay: 2.6s;
+}
+.pufakchalar span.pufak7:before {
+    animation-delay: 7.3s;
+}
+
+
+.pufakchalar span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.589);
+    transform: skew(45deg) translateX(150px);
+    overflow: hidden;
+    animation: kozgu 3s linear infinite;
+}
+
+
+.quti {
+    padding: 15px;
+    border-radius: 12px;
+    width: 400px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.15);
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); */
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    height: auto;
+}
+
+.quti input[type="text"]{
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+    height: 100px;
+    outline: none;
+    margin: 0 3px;
+}
+
+.quti input[type="button"]{
+    height: 65px;
+    width: calc(100% / 4 - 5px);
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+
+.quti input[type="button"]:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width:600px){
+  body {
+    margin-top: 10px;
+    align-items: flex-start;
+  }
+  .quti {
+    width: 93%;
+    max-width: 100%;
+    border: 1px solid #fff;
+  }
+}
